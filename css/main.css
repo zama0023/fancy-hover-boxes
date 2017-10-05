@@ -1,3 +1,28 @@
 html {
   font-family: "Asap Condensed", sans-serif;
 }
+
+.hover-box {
+  color: #fff;
+}
+
+.hover-box-caption {
+  bottom: -4em;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .9);
+  transition: all .2s linear;
+}
+
+.hover-box:hover .hover-box-caption {
+  bottom: 0;
+}
+
+.hover-box-img {
+  filter: grayscale(100%);
+  transition: all .2s linear;
+}
+
+.hover-box:hover .hover-box-img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
